@@ -1,4 +1,4 @@
-## Configure Linux-based web servers and database servers using Ansible playbooks 📚
+## Configure Linux-based web and database servers using Ansible playbooks 📚
 
 ## Setup 💻
 
