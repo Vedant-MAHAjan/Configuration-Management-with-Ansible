@@ -1,6 +1,6 @@
-Configure Linux-based web servers and database servers using Ansible playbooks.
+## Configure Linux-based web servers and database servers using Ansible playbooks 📚
 
-## Setup
+## Setup 💻
 
 1. Login to your AWS account
 2. Create a Ubuntu-based EC2 instance and install Ansible on it
@@ -10,7 +10,7 @@ Configure Linux-based web servers and database servers using Ansible playbooks.
 2. Download both of the key pairs
 3. ```ssh``` into the control machine and copy the key pair for target machines from the local device to the control machine
 
-## Configuration Management Tools
+## Configuration Management Tools ⚒
 
 * Configuration management tools are idempotent
 * They save the state of the target machines
@@ -31,7 +31,7 @@ Configure Linux-based web servers and database servers using Ansible playbooks.
 
 
 
-## Hands-on part...
+## Hands-on part... 👐
 
 Let's begin by looking at the files in the working directory
 
@@ -42,14 +42,14 @@ Let's begin by looking at the files in the working directory
 
 ![image](https://github.com/Vedant-MAHAjan/Database-configuration-with-Ansible/assets/88843623/5850322a-e580-437b-be5a-8d55539fa92e)
 
-#### Ansible playbooks
+### Ansible playbooks
 
 * A playbook is like a YAML configuration file
 * Each playbook contains multiple plays
 * Each play contains tasks that will be executed 
 * These tasks are executed on the target machine
 
-#### Inventory file
+### Inventory file
 ```
 all:
   hosts:
@@ -72,13 +72,14 @@ all:
         ansible_user: ec2-user
         ansible_ssh_private_key_file: client-key.pem
 ```
+
 #### Explanation
 
 ![image](https://github.com/Vedant-MAHAjan/Configuration-Management-with-Ansible/assets/88843623/7f538421-56f8-4b97-a090-13a543c0129b)
 
 
 
-## Commands to execute
+## Commands to execute 🔢
  
  * Login into the control machine which has the key for the target machines
  * Execute the following commands...
@@ -135,9 +136,9 @@ all:
 * A database is created with the name ```accounts```
 * A user is created with the name ```my_user```
 
-### Note
+### Note 📝
 
-Notice the Gathering Facts in each of the output picture...
+Notice the Gathering Facts in each of the output pictures...
 
 * Gathering facts means Ansible is collecting information on the target machines
 * This helps it to compare the current state to the desired state
