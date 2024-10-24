@@ -33,6 +33,7 @@
 
 ## Hands-on part... 👐
 
+
 Let's begin by looking at the files in the working directory
 
 * The ```client-key.pem``` file is the key used to ssh into the target machines from the control machine
@@ -41,6 +42,11 @@ Let's begin by looking at the files in the working directory
 * There is a folder which has ```index.html``` file to be deployed on the web server
 
 ![image](https://github.com/Vedant-MAHAjan/Database-configuration-with-Ansible/assets/88843623/5850322a-e580-437b-be5a-8d55539fa92e)
+
+### Aim
+
+* Deploy the ```index.html``` file on the web server (using the ```web-target.yaml``` file)
+* Create a new database and a new user on the database server (using the ```db-target.yaml``` file)
 
 ### Ansible playbooks
 
