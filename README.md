@@ -111,6 +111,9 @@ all:
 #### Output
 
 * ```maria-db``` service is started and enabled on the database machine
+
+![image](https://github.com/user-attachments/assets/37a36374-36eb-456a-af31-6ea3a39786d5)
+
   
 ### 3.
 
@@ -127,6 +130,7 @@ all:
 
   ![image](https://github.com/Vedant-MAHAjan/Database-configuration-with-Ansible/assets/88843623/134a4316-1822-44eb-9613-9635bbed02ed)
 
+![image](https://github.com/user-attachments/assets/78d69065-3d98-4c22-850f-d3cd4c0dfc22)
 
 
 ### 4. 
@@ -141,10 +145,14 @@ all:
 * A database is created with the name ```accounts```
 * A user is created with the name ```my_user```
 
+![image](https://github.com/user-attachments/assets/f64a128d-90a2-4c37-a486-45029d63f13b)
+
+
 ### Note 📝
 
-Notice the Gathering Facts in each of the output pictures...
+Notice same commands repeated in ```target.yaml``` and both the separate target files?
 
-* Gathering facts means Ansible is collecting information on the target machines
-* This helps it to compare the current state to the desired state
-* If state difference exists, Ansible will apply the new changes to the target machines
+The repeated commands in ```db-target.yaml``` and ```web-target.yaml```, despite being present in target.yaml, provide modularity and flexibility.
+
+* target.yaml: Sets up both the web and database servers in a single run (initial setup or large changes).
+* db-target.yaml and web-target.yaml: Allow focused updates or maintenance on just the web server or the database server without affecting the other.
