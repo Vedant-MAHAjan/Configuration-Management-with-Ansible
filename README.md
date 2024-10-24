@@ -1,15 +1,5 @@
 ## Configure Linux-based web and database servers using Ansible playbooks 📚
 
-## Setup 💻
-
-1. Login to your AWS account
-2. Create a Ubuntu-based EC2 instance and install Ansible on it
-3. Create a key pair for this control machine which 
-4. Create 2 more instances, both CentOS with one as a web server and another as a database server
-5. Create a key pair for these instances which will help to ```ssh``` into the instance
-2. Download both of the key pairs
-3. ```ssh``` into the control machine and copy the key pair for target machines from the local device to the control machine
-
 ## Configuration Management Tools ⚒
 
 * Configuration management tools are idempotent
@@ -19,6 +9,15 @@
 * They apply configuration changes only if a difference exists
 * But scripts rerun the tasks unless some intelligence is applied to it
 
+## Setup 💻
+
+1. Login to your AWS account
+2. Create a Ubuntu-based EC2 instance and install Ansible on it
+3. Create a key pair for this control machine
+4. Create 2 more instances, both CentOS with one as a web server and another as a database server
+5. Create a key pair for these instances which will help to ```ssh``` into the instance
+2. Download both of the key pairs
+3. ```ssh``` into the control machine and copy the key pair for target machines from the local device to the control machine
 
 ## Use cases of Ansible
 
